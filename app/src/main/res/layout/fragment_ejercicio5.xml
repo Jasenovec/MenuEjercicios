@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Se evaluará si el número 60 es compuesto o no. Además de añadir sus factores."
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/list_factors_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar factores y determinar si es compuesto" />
+
+    <TextView
+        android:id="@+id/result_factors_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>

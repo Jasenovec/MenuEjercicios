@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Sabemos que la edad de Ana es 5 años más que la edad de Juan. Se solicita que ingrese la edad de Ana para hallar la edad de Juan."
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/input_age_ana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la edad de Ana"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculate_ages_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular edades" />
+
+    <TextView
+        android:id="@+id/result_ages_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_bienvenida"
+        android:title="Bienvenida" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_1"
+        android:title="Ejercicio 1" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_2"
+        android:title="Ejercicio 2" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_3"
+        android:title="Ejercicio 3" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_4"
+        android:title="Ejercicio 4" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_5"
+        android:title="Ejercicio 5" />
+
+    <item
+        android:id="@+id/menu_item_ejercicio_6"
+        android:title="Ejercicio 6" />
+
+</menu>

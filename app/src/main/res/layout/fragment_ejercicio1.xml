@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Ingresa un número y verifica si el mismo es primo"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un número"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/check_prime_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar si es primo" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>

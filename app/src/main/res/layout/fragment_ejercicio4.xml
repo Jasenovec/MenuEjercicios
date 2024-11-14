@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="¿Cuantos días necesitarán 6 trabajadores para construir un muro, sabiendo que 4 trabajadores pueden hacerlo en 6 días? Asume que todos los trabajadores trabajan al mismo ritmo."
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/input_target_workers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el número de trabajadores"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculate_days_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular días" />
+
+    <TextView
+        android:id="@+id/result_days_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>

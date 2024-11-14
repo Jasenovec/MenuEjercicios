@@ -1,47 +1,59 @@
 package com.jasenovec.menuejercicios
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.jasenovec.menuejercicios.ui.theme.MenuEjerciciosTheme
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import com.google.android.material.navigation.NavigationView
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var drawerLayout: DrawerLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            MenuEjerciciosTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+        setContentView(R.layout.activity_main)
+
+        // Configurar el DrawerLayout
+        drawerLayout = findViewById(R.id.drawer_layout)
+
+        // Configurar el NavigationView
+        val navigationView: NavigationView = findViewById(R.id.navigation_view)
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            menuItem.isChecked = true
+            drawerLayout.closeDrawers()
+
+            // Manejar la selección de elementos del menú
+            when (menuItem.itemId) {
+                R.id.menu_item_bienvenida -> replaceFragment(WelcomeFragment())
+                R.id.menu_item_ejercicio_1 -> replaceFragment(Ejercicio1Fragment())
+                R.id.menu_item_ejercicio_2 -> replaceFragment(Ejercicio2Fragment())
+                R.id.menu_item_ejercicio_3 -> replaceFragment(Ejercicio3Fragment())
+                R.id.menu_item_ejercicio_4 -> replaceFragment(Ejercicio4Fragment())
+                R.id.menu_item_ejercicio_5 -> replaceFragment(Ejercicio5Fragment())
+                R.id.menu_item_ejercicio_6 -> replaceFragment(Ejercicio6Fragment())
             }
+            true
+        }
+
+        // Cargar el fragmento de bienvenida por defecto
+        if (savedInstanceState == null) {
+            replaceFragment(WelcomeFragment())
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MenuEjerciciosTheme {
-        Greeting("Android")
+    override fun onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START)
+        } else {
+            super.onBackPressed()
+        }
     }
 }
