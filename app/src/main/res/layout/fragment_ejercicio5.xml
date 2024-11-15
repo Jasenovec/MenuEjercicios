@@ -17,7 +17,15 @@
         android:id="@+id/list_factors_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listar factores y determinar si es compuesto" />
+        android:text="Listar factores y determinar si es compuesto"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/result_factors_text"

@@ -17,11 +17,21 @@
         android:id="@+id/check_compound_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Verificar si es compuesto" />
+        android:text="Verificar si es compuesto"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="14dp"
+        />
 
     <TextView
         android:id="@+id/result_compound_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:textSize="19sp" />
 </LinearLayout>

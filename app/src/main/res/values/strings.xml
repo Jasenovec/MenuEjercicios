@@ -1,5 +1,14 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MenuEjercicios</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer" tools:ignore="PrivateResource">Cerrar menú</string>
+    <string name="nav_header_title">Bienvenido</string>
+    <string name="nav_header_subtitle">Tu App</string>
+    <string name="welcome_title">Bienvenido a la Aplicación de Ejercicios</string>
+    <string name="welcome_subtitle">Aquí podrás realizar distintos ejercicios de cálculo y lógica.</string>
+    <string name="welcome_message_1">Presiona en las 3 líneas para acceder al menú de ejercicios.</string>
+    <string name="welcome_message_2">Elaborado por: Rodrigo Montano.</string>
+
 </resources>

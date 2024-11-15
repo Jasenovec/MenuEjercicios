@@ -18,13 +18,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese un número"
-        android:inputType="number" />
+        android:inputType="number"
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/check_prime_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Verificar si es primo" />
+        android:text="Verificar si es primo"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/result_text"

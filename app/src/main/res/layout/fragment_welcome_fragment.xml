@@ -9,28 +9,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a la Aplicación de Ejercicios"
+        android:text="@string/welcome_title"
         android:textSize="24sp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aquí podrás realizar distintos ejercicios de cálculo y lógica."
+        android:text="@string/welcome_subtitle"
         android:padding="8dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Desliza a la derecha desde el borde de la pantalla para acceder al menú de ejercicios."
+        android:text="@string/welcome_message_1"
         android:textStyle="bold"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/orange_700"
         android:textSize="18sp"
         android:padding="8dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elaborado por: Rodrigo Montano"
+        android:text="@string/welcome_message_2"
         android:textStyle="italic"
         android:textSize="18sp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:layout_marginBottom="14dp"
+        android:layout_gravity="center" />
 </LinearLayout>

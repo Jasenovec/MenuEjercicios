@@ -24,7 +24,14 @@
         android:id="@+id/calculate_days_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular días" />
+        android:text="Calcular días"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="14dp"/>
 
     <TextView
         android:id="@+id/result_days_text"
